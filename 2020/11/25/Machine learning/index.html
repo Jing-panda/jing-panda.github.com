@@ -9,12 +9,12 @@
   
   
   
-  <meta name="description" content="Linear regressionGenerally, in regression analysis, you usually consider some phenomenon of interest and have a number of observations. Each observation has two or more features. Following the assumpt">
+  <meta name="description" content="Linear regression Generally, in regression analysis, you usually consider some phenomenon of interest and have a number of observations. Each observation has two or more features. Following the assump">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Machine learning -linear regression">
 <meta property="og:url" content="https://jing-panda/Jing-panda.github.io/2020/11/25/Machine%20learning/index.html">
 <meta property="og:site_name" content="Jing&#39;s Blog">
-<meta property="og:description" content="Linear regressionGenerally, in regression analysis, you usually consider some phenomenon of interest and have a number of observations. Each observation has two or more features. Following the assumpt">
+<meta property="og:description" content="Linear regression Generally, in regression analysis, you usually consider some phenomenon of interest and have a number of observations. Each observation has two or more features. Following the assump">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-25T19:54:34.000Z">
 <meta property="article:modified_time" content="2020-12-05T21:57:47.897Z">
@@ -161,9 +161,9 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Linear-regression"><a href="#Linear-regression" class="headerlink" title="Linear regression"></a>Linear regression</h1><p>Generally, in regression analysis, you usually consider <strong>some phenomenon of interest</strong> and have a number of observations. Each observation has two or more features. Following the assumption that (at least) one of the features depends on the others, you try to establish a relation among them.</p>
+        <h1>Linear regression</h1>
+<p>Generally, in regression analysis, you usually consider <strong>some phenomenon of interest</strong> and have a number of observations. Each observation has two or more features. Following the assumption that (at least) one of the features depends on the others, you try to establish a relation among them.</p>
 <a id="more"></a>
-
 <p>In other words, <strong>you need to find a function that maps some features or variables to others sufficiently well</strong>.</p>
 <p>The dependent features are called the <strong>dependent variables</strong>, <strong>outputs</strong>, or <strong>responses</strong>.</p>
 <p>The independent features are called the <strong>independent variables</strong>, <strong>inputs</strong>, or <strong>predictors</strong>.</p>
@@ -177,10 +177,12 @@
 <p>The value 𝑅² = 1 corresponds to SSR = 0, that is to the <strong>perfect fit</strong> since the values of predicted and actual responses fit completely to each other.</p>
 <p>A paragraph is simply one or more consecutive lines of text. In markdown source code, paragraphs are separated by two or more blank lines. In Typora, you only need one blank line (press <code>Return</code> once) to create a new paragraph.</p>
 <p>Press <code>Shift</code> + <code>Return</code> to create a single line break. Most other markdown parsers will ignore single line breaks, so in order to make other markdown parsers recognize your line break, you can leave two spaces at the end of the line, or insert <code>&lt;br/&gt;</code>.</p>
-<h3 id="Polynomial-regression"><a href="#Polynomial-regression" class="headerlink" title="Polynomial regression"></a>Polynomial regression</h3><p>$y=\beta_0+\beta_1x_1+\beta_2x_{1}^{2}+…+\beta_nx_{1}^{n}$</p>
-<h3 id="Dummy-variables"><a href="#Dummy-variables" class="headerlink" title="Dummy variables"></a>Dummy variables</h3><p>A dummy variable (is, an indicator variable) is a numeric variable that represents categorical data, such as gender, race, etc.</p>
+<h3 id="Polynomial-regression">Polynomial regression</h3>
+<p>$y=\beta_0+\beta_1x_1+\beta_2x_{1}^{2}+…+\beta_nx_{1}^{n}$</p>
+<h3 id="Dummy-variables">Dummy variables</h3>
+<p>A dummy variable (is, an indicator variable) is a numeric variable that represents categorical data, such as gender, race, etc.</p>
 <p>Convert categorical variable into dummy/indicator variables and drop one in each category:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; X = pd.get_dummies(data=X, drop_first=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; X = pd.get_dummies(data=X, drop_first=<span class="literal">True</span>)</span><br></pre></td></tr></tbody></table></figure>
 
       
     </div>
@@ -249,7 +251,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linear-regression"><span class="nav-number">1.</span> <span class="nav-text">Linear regression</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Polynomial-regression"><span class="nav-number">1.0.1.</span> <span class="nav-text">Polynomial regression</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dummy-variables"><span class="nav-number">1.0.2.</span> <span class="nav-text">Dummy variables</span></a></li></ol></li></ol></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Linear regression</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Polynomial-regression"><span class="nav-number">1.0.1.</span> <span class="nav-text">Polynomial regression</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dummy-variables"><span class="nav-number">1.0.2.</span> <span class="nav-text">Dummy variables</span></a></li></ol></li></ol></li></ol>
     
     </div>
   </aside>
